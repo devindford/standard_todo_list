@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- * Add for SEO -->
+    <meta name="description" content="Enter description" />
+    <!-- * Add for SEO and web crawlers, appear on google faster-->
+    <meta name="robots" content="index, follow" />
+    <!-- * Changes icon in title tab -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo Project</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        The totally not over done ToDo List project 😂😂
+      </h1>
+    </header>
+    <form>
+      <div class="mobile-flex">
+        <input type="text" class="todo-input" />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Complete</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
